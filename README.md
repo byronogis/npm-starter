@@ -1,15 +1,27 @@
 # pkg-placeholder
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![bundle][bundle-src]][bundle-href]
+<!-- automd:badges license codecov bundlephobia packagephobia -->
+<!-- /automd -->
+
 [![JSDocs][jsdocs-src]][jsdocs-href]
-[![License][license-src]][license-href]
 
 _description_
 
 > **Note**:
-> Replace `pkg-placeholder`, `_description_` and `antfu` globally to use this template.
+> Replace `pausable-timers`, `_description_` and `byronogis` globally to use this template.
+
+## Installation
+
+<!-- automd:pm-install -->
+<!-- /automd -->
+
+## Example
+
+<!-- automd:file src="./example/index.ts" code -->
+<!-- /automd -->
+
+<!-- automd:fetch url="gh:byronogis/.github/main/snippets/readme-contrib-node-pnpm.md" -->
+<!-- /automd -->
 
 ## Sponsors
 
@@ -21,17 +33,13 @@ _description_
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [Byron](https://github.com/byronogis)
+<!-- automd:contributors author="byronogis" license="MIT" -->
+<!-- /automd -->
+
+<!-- automd:with-automd lastUpdate -->
+<!-- /automd -->
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-version-href]: https://npmjs.com/package/pkg-placeholder
-[npm-downloads-src]: https://img.shields.io/npm/dm/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-downloads-href]: https://npmjs.com/package/pkg-placeholder
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669&label=minzip
-[bundle-href]: https://bundlephobia.com/result?p=pkg-placeholder
-[license-src]: https://img.shields.io/github/license/byronogis/pkg-placeholder.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/byronogis/pkg-placeholder/blob/main/LICENSE
-[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/pkg-placeholder
+[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-1fa669
+[jsdocs-href]: https://www.jsdocs.io/package/pausable-timers

@@ -40,12 +40,13 @@
     "build": "unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
-    "prepublishOnly": "nr build",
+    "prepublishOnly": "automd && nr build",
     "release": "bumpp && pnpm publish",
     "start": "esno src/index.ts",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
+    "automd": "automd README.md",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
@@ -54,6 +55,7 @@
     "@antfu/utils": "^0.7.10",
     "@types/node": "^22.10.1",
     "@vitest/coverage-v8": "^2.1.6",
+    "automd": "^0.3.12",
     "bumpp": "^9.8.1",
     "eslint": "^9.15.0",
     "esno": "^4.8.0",
