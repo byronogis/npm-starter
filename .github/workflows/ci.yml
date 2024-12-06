@@ -24,7 +24,6 @@ jobs:
 
       - run: pnpm i -g @antfu/ni
       - run: nci
-      - run: nr build
       - run: nr lint
       - run: nr typecheck
 
@@ -51,4 +50,4 @@ jobs:
       - run: pnpm i -g @antfu/ni
       - run: nci
       - run: nr build
-      - run: nr coverage
+      - run: nr test
