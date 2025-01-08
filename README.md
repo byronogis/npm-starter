@@ -15,7 +15,7 @@
 _description_
 
 > **Note**:
-> Replace `pausable-timers`, `_description_` and `byronogis` globally to use this template.
+> Replace `pkg-placeholder`, `_description_` and `byronogis` globally to use this template.
 
 ## Installation
 
