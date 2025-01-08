@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import pkg from '../package.json'
 
-function getRepoName(url) {
+function getRepoName(url: string) {
   const match = url.match(/github\.com\/[\w-]+\/([\w-]+)/)
   return match ? `/${match[1]}/` : '/'
 }
@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [
     UnoCSS(),
     createHtmlPlugin({
-      entry: 'src/main.js',
+      entry: '/src/main.ts',
       inject: {
         data: {
           title: `${pkg.name} | Playground`,
