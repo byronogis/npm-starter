@@ -19,7 +19,7 @@ export default defineConfig({
           title: `${pkg.name} | Playground`,
           name: pkg.name,
           version: pkg.version,
-          repo: pkg.repository.url,
+          repo: pkg.repository.url.slice(4),
         },
       },
     }),

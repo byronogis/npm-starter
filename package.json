@@ -7,7 +7,7 @@
   "description": "_description_",
   "repository": {
     "type": "git",
-    "url": "https://github.com/byronogis/pkg-placeholder.git"
+    "url": "git+https://github.com/byronogis/pkg-placeholder.git"
   },
   "scripts": {
     "dev": "turbo run dev",
