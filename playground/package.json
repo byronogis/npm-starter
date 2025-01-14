@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "clear": "rimraf dist"
+    "clear": "rimraf dist || true"
   },
   "devDependencies": {
     "pkg-placeholder": "workspace:*"

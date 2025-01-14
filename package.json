@@ -19,7 +19,7 @@
     "root:lint:fix": "eslint . --fix",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
-    "clear": "turbo run clear && rimraf **/node_modules **/.turbo",
+    "clear": "turbo run clear && rimraf **/node_modules; rimraf **/.turbo || true",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
