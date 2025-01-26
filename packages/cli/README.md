@@ -2,11 +2,11 @@
 
 <!-- automd:badges license codecov bundlephobia packagephobia -->
 
-[![npm version](https://img.shields.io/npm/v/@unmini/cli)](https://npmjs.com/package/@unmini/cli)
-[![npm downloads](https://img.shields.io/npm/dm/@unmini/cli)](https://npm.chart.dev/@unmini/cli)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/@unmini/cli)](https://bundlephobia.com/package/@unmini/cli)
-[![codecov](https://img.shields.io/codecov/c/gh/byronogis/unmini)](https://codecov.io/gh/byronogis/unmini)
-[![license](https://img.shields.io/github/license/byronogis/unmini)](https://github.com/byronogis/unmini/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@pkg-placeholder/cli)](https://npmjs.com/package/@pkg-placeholder/cli)
+[![npm downloads](https://img.shields.io/npm/dm/@pkg-placeholder/cli)](https://npm.chart.dev/@pkg-placeholder/cli)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@pkg-placeholder/cli)](https://bundlephobia.com/package/@pkg-placeholder/cli)
+[![codecov](https://img.shields.io/codecov/c/gh/byronogis/pkg-placeholder)](https://codecov.io/gh/byronogis/pkg-placeholder)
+[![license](https://img.shields.io/github/license/byronogis/pkg-placeholder)](https://github.com/byronogis/pkg-placeholder/blob/main/LICENSE)
 
 <!-- /automd -->
 
@@ -20,22 +20,22 @@ CLI for [unmini](https://github.com/byronogis/unmini).
 
 ```sh
 # ✨ Auto-detect
-npx nypm install @unmini/cli
+npx nypm install @pkg-placeholder/cli
 
 # npm
-npm install @unmini/cli
+npm install @pkg-placeholder/cli
 
 # yarn
-yarn add @unmini/cli
+yarn add @pkg-placeholder/cli
 
 # pnpm
-pnpm install @unmini/cli
+pnpm install @pkg-placeholder/cli
 
 # bun
-bun install @unmini/cli
+bun install @pkg-placeholder/cli
 
 # deno
-deno install @unmini/cli
+deno install @pkg-placeholder/cli
 ```
 
 <!-- /automd -->
@@ -75,11 +75,11 @@ deno install @unmini/cli
 
 <!-- automd:contributors author="byronogis" license="MIT" -->
 
-Published under the [MIT](https://github.com/byronogis/unmini/blob/main/LICENSE) license.
-Made by [@byronogis](https://github.com/byronogis) and [community](https://github.com/byronogis/unmini/graphs/contributors) 💛
+Published under the [MIT](https://github.com/byronogis/pkg-placeholder/blob/main/LICENSE) license.
+Made by [@byronogis](https://github.com/byronogis) and [community](https://github.com/byronogis/pkg-placeholder/graphs/contributors) 💛
 <br><br>
-<a href="https://github.com/byronogis/unmini/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=byronogis/unmini" />
+<a href="https://github.com/byronogis/pkg-placeholder/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=byronogis/pkg-placeholder" />
 </a>
 
 <!-- /automd -->
