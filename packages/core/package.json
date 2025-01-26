@@ -13,6 +13,9 @@
   },
   "bugs": "https://github.com/byronogis/pkg-placeholder/issues",
   "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "exports": {
     ".": {

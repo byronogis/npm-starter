@@ -1,6 +1,6 @@
 # pkg-placeholder
 
-<!-- automd:badges license codecov bundlephobia packagephobia -->
+<!-- automd:badges name="pkg-placeholder" license codecov bundlephobia packagephobia -->
 
 [![npm version](https://img.shields.io/npm/v/pkg-placeholder)](https://npmjs.com/package/pkg-placeholder)
 [![npm downloads](https://img.shields.io/npm/dm/pkg-placeholder)](https://npm.chart.dev/pkg-placeholder)

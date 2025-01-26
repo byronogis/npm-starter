@@ -1,5 +1,5 @@
 {
-  "name": "pkg-placeholder",
+  "name": "@pkg-placeholder/monorepo",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -10,16 +10,17 @@
     "url": "https://github.com/byronogis/pkg-placeholder.git"
   },
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
+    "dev": "turbo run dev --filter='./packages/*'",
+    "build": "turbo run build --filter='./packages/*'",
+    "build:full": "turbo run build",
     "automd": "turbo run automd && pnpm run root:automd",
     "release": "bumpp -r && pnpm run -r release",
-    "root:automd": "automd README.md",
+    "root:automd": "automd --input='README*.md'",
     "root:lint": "eslint .",
     "root:lint:fix": "eslint . --fix",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
-    "clear": "turbo run clear && rimraf **/node_modules **/.turbo",
+    "clear": "pnpx turbo run clear && pnpx rimraf -g '**/node_modules' '**/.turbo' '**/coverage'",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
