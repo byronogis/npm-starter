@@ -1,0 +1,1 @@
+# @pkg-placeholder/typescript-config
