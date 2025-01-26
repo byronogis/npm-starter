@@ -49,6 +49,5 @@
     "test": "vitest",
     "clear": "rimraf dist"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
