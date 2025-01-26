@@ -1,8 +1,8 @@
 {
-  "name": "pkg-placeholder",
+  "name": "@pkg-placeholder/cli",
   "type": "module",
   "version": "0.0.0",
-  "description": "_description_",
+  "description": "CLI for pkg-placeholder",
   "author": "Byron <byronogis@outlook.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/byronogis",
@@ -13,10 +13,10 @@
   },
   "bugs": "https://github.com/byronogis/pkg-placeholder/issues",
   "keywords": [],
+  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },
-  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -35,7 +35,11 @@
       ]
     }
   },
+  "bin": {
+    "pkg-placeholder": "./bin/index.mjs"
+  },
   "files": [
+    "bin",
     "dist"
   ],
   "scripts": {
@@ -50,10 +54,16 @@
     "clear": "rimraf dist"
   },
   "dependencies": {
-    "c12": "^2.0.1",
-    "defu": "^6.1.4",
-    "hookable": "^5.5.3",
+    "@types/fs-extra": "^11.0.4",
+    "chokidar": "^3.6.0",
+    "citty": "^0.1.6",
+    "colorette": "^2.0.20",
+    "consola": "^3.4.0",
+    "fs-extra": "^11.3.0",
     "pathe": "^2.0.2",
-    "type-fest": "^4.33.0"
-  }
+    "perfect-debounce": "^1.0.0",
+    "pkg-placeholder": "workspace:*",
+    "tinyglobby": "^0.2.10"
+  },
+  "devDependencies": { }
 }

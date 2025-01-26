@@ -1,0 +1,6 @@
+{
+  "extends": "@pkg-placeholder/typescript-config/tsconfig.base.json",
+  "include": [
+    "src"
+  ]
+}

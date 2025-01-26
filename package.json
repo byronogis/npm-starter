@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.1.0",
+    "@pkg-placeholder/cli": "workspace:*",
     "@pkg-placeholder/shared": "workspace:*",
     "@pkg-placeholder/typescript-config": "workspace:*",
     "@types/node": "^22.10.10",

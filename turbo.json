@@ -12,8 +12,17 @@
       "persistent": true,
       "dependsOn": ["^dev"]
     },
+    "playground#build": {
+      "dependsOn": ["^build"]
+    },
     "playground#typecheck": {
       "dependsOn": ["^build"]
+    },
+    "@pkg-placeholder/cli#build": {
+      "dependsOn": ["^build"]
+    },
+    "@pkg-placeholder/cli#typecheck": {
+      "dependsOn": ["build"]
     },
     "build": {
       "dependsOn": ["^build", "typecheck"]
