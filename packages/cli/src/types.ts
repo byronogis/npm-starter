@@ -1,4 +1,4 @@
-import type { Config, ResolvedConfig } from 'pkg-placeholder'
+import type { Config, ResolvedConfig } from '@pkg-placeholder/core'
 
 interface BaseCLIConfig {
   /**

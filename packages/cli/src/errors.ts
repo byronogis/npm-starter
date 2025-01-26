@@ -1,6 +1,6 @@
 import process from 'node:process'
+import { CoreError } from '@pkg-placeholder/core'
 import { consola } from 'consola'
-import { CoreError } from 'pkg-placeholder'
 
 export function handleError(error: unknown): void {
   if (error instanceof CoreError) {

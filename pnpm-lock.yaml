@@ -62,6 +62,9 @@ importers:
 
   packages/cli:
     dependencies:
+      '@pkg-placeholder/core':
+        specifier: workspace:*
+        version: link:../core
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -86,9 +89,6 @@ importers:
       perfect-debounce:
         specifier: ^1.0.0
         version: 1.0.0
-      pkg-placeholder:
-        specifier: workspace:*
-        version: link:../core
       tinyglobby:
         specifier: ^0.2.10
         version: 0.2.10
@@ -111,6 +111,19 @@ importers:
         specifier: ^4.33.0
         version: 4.33.0
 
+  packages/pkg-placeholder:
+    dependencies:
+      '@pkg-placeholder/cli':
+        specifier: workspace:*
+        version: link:../cli
+      '@pkg-placeholder/core':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
+
   packages/shared: {}
 
   packages/typescript-config: {}
@@ -122,7 +135,7 @@ importers:
         version: 65.4.3
       pkg-placeholder:
         specifier: workspace:*
-        version: link:../packages/core
+        version: link:../packages/pkg-placeholder
       unocss:
         specifier: ^65.4.3
         version: 65.4.3(postcss@8.4.49)(rollup@4.30.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))

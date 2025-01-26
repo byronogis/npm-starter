@@ -15,7 +15,11 @@
 _description_
 
 > **Note**:
+>
+> Rename `packages/pkg-placeholder`.
+>
 > Replace `pkg-placeholder`, `_description_` and `byronogis` globally to use this template.
+>
 
 ## Installation
 
@@ -91,7 +95,7 @@ Made by [@byronogis](https://github.com/byronogis) and [community](https://githu
 
 ---
 
-_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Sun Jan 26 2025)_
+_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Mon Jan 27 2025)_
 
 <!-- /automd -->
 

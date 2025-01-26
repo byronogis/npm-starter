@@ -1,10 +1,10 @@
-# @pkg-placeholder/core
+# pkg-placeholder
 
 <!-- automd:badges license codecov bundlephobia packagephobia -->
 
-[![npm version](https://img.shields.io/npm/v/@pkg-placeholder/core)](https://npmjs.com/package/@pkg-placeholder/core)
-[![npm downloads](https://img.shields.io/npm/dm/@pkg-placeholder/core)](https://npm.chart.dev/@pkg-placeholder/core)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/@pkg-placeholder/core)](https://bundlephobia.com/package/@pkg-placeholder/core)
+[![npm version](https://img.shields.io/npm/v/pkg-placeholder)](https://npmjs.com/package/pkg-placeholder)
+[![npm downloads](https://img.shields.io/npm/dm/pkg-placeholder)](https://npm.chart.dev/pkg-placeholder)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/pkg-placeholder)](https://bundlephobia.com/package/pkg-placeholder)
 [![codecov](https://img.shields.io/codecov/c/gh/byronogis/pkg-placeholder)](https://codecov.io/gh/byronogis/pkg-placeholder)
 [![license](https://img.shields.io/github/license/byronogis/pkg-placeholder)](https://github.com/byronogis/pkg-placeholder/blob/main/LICENSE)
 
@@ -12,7 +12,7 @@
 
 [![JSDocs][jsdocs-src]][jsdocs-href]
 
-Core for [pkg-placeholder](https://github.com/byronogis/pkg-placeholder).
+_description_
 
 ## Installation
 
@@ -20,22 +20,22 @@ Core for [pkg-placeholder](https://github.com/byronogis/pkg-placeholder).
 
 ```sh
 # ✨ Auto-detect
-npx nypm install @pkg-placeholder/core
+npx nypm install pkg-placeholder
 
 # npm
-npm install @pkg-placeholder/core
+npm install pkg-placeholder
 
 # yarn
-yarn add @pkg-placeholder/core
+yarn add pkg-placeholder
 
 # pnpm
-pnpm install @pkg-placeholder/core
+pnpm install pkg-placeholder
 
 # bun
-bun install @pkg-placeholder/core
+bun install pkg-placeholder
 
 # deno
-deno install @pkg-placeholder/core
+deno install pkg-placeholder
 ```
 
 <!-- /automd -->

@@ -4,7 +4,7 @@ import { description, version } from '../package.json'
 
 const main = defineCommand({
   meta: {
-    name: 'unmini',
+    name: 'pkg-placeholder',
     version,
     description,
   },
