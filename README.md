@@ -14,7 +14,7 @@
 
 _description_
 
-> **Note**:
+> [!NOTE]
 >
 > Rename `packages/pkg-placeholder`.
 >
