@@ -55,15 +55,15 @@
   },
   "dependencies": {
     "@pkg-placeholder/core": "workspace:*",
-    "@types/fs-extra": "^11.0.4",
-    "chokidar": "^3.6.0",
-    "citty": "^0.1.6",
-    "colorette": "^2.0.20",
-    "consola": "^3.4.0",
-    "fs-extra": "^11.3.0",
-    "pathe": "^2.0.2",
-    "perfect-debounce": "^1.0.0",
-    "tinyglobby": "^0.2.10"
+    "@types/fs-extra": "catalog:",
+    "chokidar": "catalog:",
+    "citty": "catalog:",
+    "colorette": "catalog:",
+    "consola": "catalog:",
+    "fs-extra": "catalog:",
+    "pathe": "catalog:",
+    "perfect-debounce": "catalog:",
+    "tinyglobby": "catalog:"
   },
   "devDependencies": {}
 }
