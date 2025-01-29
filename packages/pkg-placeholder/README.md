@@ -1,6 +1,6 @@
 # pkg-placeholder
 
-<!-- automd:badges license codecov bundlephobia packagephobia -->
+<!-- automd:badges name="pkg-placeholder" license codecov bundlephobia packagephobia -->
 
 [![npm version](https://img.shields.io/npm/v/pkg-placeholder)](https://npmjs.com/package/pkg-placeholder)
 [![npm downloads](https://img.shields.io/npm/dm/pkg-placeholder)](https://npm.chart.dev/pkg-placeholder)
@@ -14,9 +14,16 @@
 
 _description_
 
+> [!NOTE]
+>
+> Rename `packages/pkg-placeholder`.
+>
+> Replace `pkg-placeholder`, `_description_` and `byronogis` globally to use this template.
+>
+
 ## Installation
 
-<!-- automd:pm-install -->
+<!-- automd:pm-install name="pkg-placeholder" -->
 
 ```sh
 # ✨ Auto-detect
@@ -88,11 +95,11 @@ Made by [@byronogis](https://github.com/byronogis) and [community](https://githu
 
 ---
 
-_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Mon Jan 27 2025)_
+_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Jan 29 2025)_
 
 <!-- /automd -->
 
 <!-- Badges -->
 
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/pausable-timers
+[jsdocs-href]: https://www.jsdocs.io/package/pkg-placeholder
