@@ -5,10 +5,10 @@ export default defineBuildConfig({
     'src/index',
     'src/cli',
   ],
-  declaration: true,
+  declaration: 'node16',
   clean: true,
   rollup: {
-    emitCJS: true,
+    emitCJS: false,
     inlineDependencies: true,
   },
 })
