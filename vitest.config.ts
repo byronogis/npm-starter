@@ -1,10 +1,19 @@
-import { defineConfig } from 'vitest/config'
+import { coverageConfigDefaults, defaultExclude, defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
+    exclude: [
+      'playground/**',
+      ...defaultExclude,
+    ],
     coverage: {
       enabled: true,
-      include: ['src'],
+      exclude: [
+        '**/dist/**',
+        '**/coverage/**',
+        'playground/**',
+        ...coverageConfigDefaults.exclude,
+      ],
     },
   },
 })
