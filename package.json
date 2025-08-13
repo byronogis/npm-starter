@@ -13,17 +13,17 @@
     "node": ">=20.19"
   },
   "scripts": {
-    "dev": "turbo run dev --filter='./packages/*'",
-    "build": "turbo run build --filter='./packages/*'",
-    "build:full": "turbo run build",
-    "automd": "turbo run automd && pnpm run root:automd",
+    "dev": "pnpm run -r -F './packages/*' dev",
+    "build": "pnpm run -r -F './packages/*' build",
+    "build:full": "pnpm run -r build",
+    "automd": "pnpm run -r automd && pnpm run root:automd",
     "release": "bumpp -r && pnpm run -r release",
     "root:automd": "automd --input='README*.md' && node ./scripts/copy-readme.mjs",
     "root:lint": "eslint .",
     "root:lint:fix": "eslint . --fix",
-    "typecheck": "turbo run typecheck",
-    "test": "turbo run test",
-    "clear": "pnpx turbo run clear && pnpx rimraf -g '**/node_modules' '**/.turbo' '**/coverage'",
+    "typecheck": "pnpm run -r typecheck",
+    "test": "pnpm run -r test",
+    "clear": "pnpm run -r clear && rimraf -g '**/node_modules' '**/coverage'",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
@@ -42,7 +42,6 @@
     "simple-git-hooks": "catalog:lint",
     "tinyglobby": "catalog:deps",
     "tsdown": "catalog:build",
-    "turbo": "latest",
     "typescript": "catalog:deps",
     "vitest": "catalog:test"
   },

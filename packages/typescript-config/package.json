@@ -3,6 +3,10 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
+  "exports": {
+    "./*": "./*",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "release": "echo @pkg-placeholder/typescript-config noneed release"
   }
