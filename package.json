@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/byronogis/pkg-placeholder.git"
   },
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
     "dev": "turbo run dev --filter='./packages/*'",
     "build": "turbo run build --filter='./packages/*'",
@@ -38,9 +41,9 @@
     "rimraf": "catalog:deps",
     "simple-git-hooks": "catalog:lint",
     "tinyglobby": "catalog:deps",
+    "tsdown": "catalog:build",
     "turbo": "latest",
     "typescript": "catalog:deps",
-    "unbuild": "catalog:build",
     "vitest": "catalog:test"
   },
   "simple-git-hooks": {

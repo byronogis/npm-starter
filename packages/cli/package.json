@@ -15,14 +15,21 @@
   "keywords": [],
   "sideEffects": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "exports": {
+      ".": "./dist/index.js",
+      "./cli": "./dist/cli.js",
+      "./package.json": "./package.json"
+    }
   },
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": "./src/index.ts",
+    "./cli": "./src/cli.ts",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "bin": {
     "pkg-placeholder": "./bin/index.mjs"
   },
@@ -31,8 +38,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "start": "jiti src/index.ts",
     "automd": "automd README.md",
     "prepublishOnly": "pnpm run build",

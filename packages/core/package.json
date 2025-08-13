@@ -14,21 +14,26 @@
   "bugs": "https://github.com/byronogis/pkg-placeholder/issues",
   "keywords": [],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "exports": {
+      ".": "./dist/index.js",
+      "./package.json": "./package.json"
+    }
   },
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "start": "jiti src/index.ts",
     "automd": "automd README.md",
     "prepublishOnly": "pnpm run build",
