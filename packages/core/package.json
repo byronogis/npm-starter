@@ -38,10 +38,10 @@
     "clear": "rimraf dist"
   },
   "dependencies": {
-    "c12": "catalog:",
-    "defu": "catalog:",
-    "hookable": "catalog:",
-    "pathe": "catalog:",
-    "type-fest": "catalog:"
+    "c12": "catalog:deps",
+    "defu": "catalog:deps",
+    "hookable": "catalog:deps",
+    "pathe": "catalog:deps",
+    "type-fest": "catalog:types"
   }
 }

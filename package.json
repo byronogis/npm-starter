@@ -24,24 +24,24 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:",
+    "@antfu/eslint-config": "catalog:lint",
     "@pkg-placeholder/cli": "workspace:*",
     "@pkg-placeholder/shared": "workspace:*",
     "@pkg-placeholder/typescript-config": "workspace:*",
-    "@types/node": "catalog:",
-    "@vitest/coverage-v8": "catalog:",
-    "automd": "catalog:",
-    "bumpp": "catalog:",
-    "eslint": "catalog:",
-    "jiti": "catalog:",
-    "lint-staged": "catalog:",
-    "rimraf": "catalog:",
-    "simple-git-hooks": "catalog:",
-    "tinyglobby": "catalog:",
+    "@types/node": "catalog:types",
+    "@vitest/coverage-v8": "catalog:test",
+    "automd": "catalog:deps",
+    "bumpp": "catalog:deps",
+    "eslint": "catalog:lint",
+    "jiti": "catalog:deps",
+    "lint-staged": "catalog:lint",
+    "rimraf": "catalog:deps",
+    "simple-git-hooks": "catalog:lint",
+    "tinyglobby": "catalog:deps",
     "turbo": "latest",
-    "typescript": "catalog:",
-    "unbuild": "catalog:",
-    "vitest": "catalog:"
+    "typescript": "catalog:deps",
+    "unbuild": "catalog:build",
+    "vitest": "catalog:test"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

@@ -42,6 +42,6 @@
     "@pkg-placeholder/core": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "catalog:"
+    "typescript": "catalog:deps"
   }
 }

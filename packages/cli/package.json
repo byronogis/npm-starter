@@ -43,15 +43,15 @@
   },
   "dependencies": {
     "@pkg-placeholder/core": "workspace:*",
-    "@types/fs-extra": "catalog:",
-    "chokidar": "catalog:",
-    "citty": "catalog:",
-    "colorette": "catalog:",
-    "consola": "catalog:",
-    "fs-extra": "catalog:",
-    "pathe": "catalog:",
-    "perfect-debounce": "catalog:",
-    "tinyglobby": "catalog:"
+    "@types/fs-extra": "catalog:types",
+    "chokidar": "catalog:cli",
+    "citty": "catalog:cli",
+    "colorette": "catalog:cli",
+    "consola": "catalog:cli",
+    "fs-extra": "catalog:deps",
+    "pathe": "catalog:deps",
+    "perfect-debounce": "catalog:deps",
+    "tinyglobby": "catalog:deps"
   },
   "devDependencies": {}
 }

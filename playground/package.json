@@ -9,10 +9,10 @@
     "clear": "rimraf dist"
   },
   "devDependencies": {
-    "@unocss/reset": "catalog:",
+    "@unocss/reset": "catalog:playground",
     "pkg-placeholder": "workspace:*",
-    "unocss": "catalog:",
-    "vite": "catalog:",
-    "vite-plugin-ejs": "catalog:"
+    "unocss": "catalog:playground",
+    "vite": "catalog:build",
+    "vite-plugin-ejs": "catalog:playground"
   }
 }
