@@ -25,6 +25,7 @@
     "typecheck": "pnpm run -r typecheck",
     "test": "pnpm run -r test",
     "clear": "pnpm run -r clear && rimraf -g '**/node_modules' '**/coverage'",
+    "update": "npx taze -r -I latest",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
