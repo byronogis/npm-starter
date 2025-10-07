@@ -8,8 +8,8 @@ catalog: null
 
 catalogs:
   build:
-    tsdown: ^0.15.4
-    vite: ^7.1.7
+    tsdown: ^0.15.6
+    vite: ^7.1.9
   cli:
     chokidar: 3.6.0
     citty: ^0.1.6
@@ -17,21 +17,21 @@ catalogs:
     consola: ^3.4.2
   deps:
     automd: ^0.4.2
-    bumpp: ^10.2.3
+    bumpp: ^10.3.1
     c12: ^3.3.0
     defu: ^6.1.4
     fs-extra: ^11.3.2
     hookable: ^5.5.3
-    jiti: ^2.6.0
+    jiti: ^2.6.1
     pathe: ^2.0.3
     perfect-debounce: ^2.0.0
     rimraf: ^6.0.1
     tinyglobby: ^0.2.15
-    typescript: ^5.9.2
+    typescript: ^5.9.3
   lint:
     '@antfu/eslint-config': ^5.4.1
-    eslint: ^9.36.0
-    lint-staged: ^16.2.0
+    eslint: ^9.37.0
+    lint-staged: ^16.2.3
     simple-git-hooks: ^2.13.1
   playground:
     '@unocss/reset': ^66.5.2
@@ -42,5 +42,5 @@ catalogs:
     vitest: ^3.2.4
   types:
     '@types/fs-extra': ^11.0.4
-    '@types/node': ^24.5.2
+    '@types/node': ^24.7.0
     type-fest: ^5.0.1
