@@ -5,6 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/@pkg-placeholder/cli)](https://npmjs.com/package/@pkg-placeholder/cli)
 [![npm downloads](https://img.shields.io/npm/dm/@pkg-placeholder/cli)](https://npm.chart.dev/@pkg-placeholder/cli)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@pkg-placeholder/cli)](https://bundlephobia.com/package/@pkg-placeholder/cli)
+[![install size](https://badgen.net/packagephobia/install/@pkg-placeholder/cli)](https://packagephobia.com/result?p=@pkg-placeholder/cli)
 [![codecov](https://img.shields.io/codecov/c/gh/byronogis/pkg-placeholder)](https://codecov.io/gh/byronogis/pkg-placeholder)
 [![license](https://img.shields.io/github/license/byronogis/pkg-placeholder)](https://github.com/byronogis/pkg-placeholder/blob/main/LICENSE)
 
@@ -29,13 +30,13 @@ npm install @pkg-placeholder/cli
 yarn add @pkg-placeholder/cli
 
 # pnpm
-pnpm install @pkg-placeholder/cli
+pnpm add @pkg-placeholder/cli
 
 # bun
 bun install @pkg-placeholder/cli
 
 # deno
-deno install @pkg-placeholder/cli
+deno install npm:@pkg-placeholder/cli
 ```
 
 <!-- /automd -->
@@ -88,7 +89,7 @@ Made by [@byronogis](https://github.com/byronogis) and [community](https://githu
 
 ---
 
-_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Jan 29 2025)_
+_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Nov 12 2025)_
 
 <!-- /automd -->
 

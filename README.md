@@ -5,6 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/pkg-placeholder)](https://npmjs.com/package/pkg-placeholder)
 [![npm downloads](https://img.shields.io/npm/dm/pkg-placeholder)](https://npm.chart.dev/pkg-placeholder)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/pkg-placeholder)](https://bundlephobia.com/package/pkg-placeholder)
+[![install size](https://badgen.net/packagephobia/install/pkg-placeholder)](https://packagephobia.com/result?p=pkg-placeholder)
 [![codecov](https://img.shields.io/codecov/c/gh/byronogis/pkg-placeholder)](https://codecov.io/gh/byronogis/pkg-placeholder)
 [![license](https://img.shields.io/github/license/byronogis/pkg-placeholder)](https://github.com/byronogis/pkg-placeholder/blob/main/LICENSE)
 
@@ -36,13 +37,13 @@ npm install pkg-placeholder
 yarn add pkg-placeholder
 
 # pnpm
-pnpm install pkg-placeholder
+pnpm add pkg-placeholder
 
 # bun
 bun install pkg-placeholder
 
 # deno
-deno install pkg-placeholder
+deno install npm:pkg-placeholder
 ```
 
 <!-- /automd -->
@@ -95,7 +96,7 @@ Made by [@byronogis](https://github.com/byronogis) and [community](https://githu
 
 ---
 
-_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Jan 29 2025)_
+_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Nov 12 2025)_
 
 <!-- /automd -->
 

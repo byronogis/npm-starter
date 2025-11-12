@@ -5,6 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/@pkg-placeholder/core)](https://npmjs.com/package/@pkg-placeholder/core)
 [![npm downloads](https://img.shields.io/npm/dm/@pkg-placeholder/core)](https://npm.chart.dev/@pkg-placeholder/core)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@pkg-placeholder/core)](https://bundlephobia.com/package/@pkg-placeholder/core)
+[![install size](https://badgen.net/packagephobia/install/@pkg-placeholder/core)](https://packagephobia.com/result?p=@pkg-placeholder/core)
 [![codecov](https://img.shields.io/codecov/c/gh/byronogis/pkg-placeholder)](https://codecov.io/gh/byronogis/pkg-placeholder)
 [![license](https://img.shields.io/github/license/byronogis/pkg-placeholder)](https://github.com/byronogis/pkg-placeholder/blob/main/LICENSE)
 
@@ -29,13 +30,13 @@ npm install @pkg-placeholder/core
 yarn add @pkg-placeholder/core
 
 # pnpm
-pnpm install @pkg-placeholder/core
+pnpm add @pkg-placeholder/core
 
 # bun
 bun install @pkg-placeholder/core
 
 # deno
-deno install @pkg-placeholder/core
+deno install npm:@pkg-placeholder/core
 ```
 
 <!-- /automd -->
@@ -88,7 +89,7 @@ Made by [@byronogis](https://github.com/byronogis) and [community](https://githu
 
 ---
 
-_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Jan 29 2025)_
+_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Wed Nov 12 2025)_
 
 <!-- /automd -->
 
