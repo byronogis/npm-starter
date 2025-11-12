@@ -39,7 +39,6 @@
     "prepublishOnly": "pnpm run build",
     "release": "pnpm publish",
     "typecheck": "tsc --noEmit",
-    "test": "vitest",
     "clear": "rimraf dist"
   },
   "dependencies": {
