@@ -1,5 +1,5 @@
 import type { FSWatcher } from 'chokidar'
-import type { CliConfig } from './types'
+import type { CliConfig } from './types.ts'
 import { resolveConfig } from '@pkg-placeholder/core'
 
 let watcher: FSWatcher

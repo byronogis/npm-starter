@@ -1,9 +1,9 @@
 import type { Hookable } from 'hookable'
 import type { Arrayable } from 'type-fest'
-import type { Config, ResolvedConfig } from './config'
-import type { Hooks } from './hooks'
-import { resolveConfig } from './config'
-import { resolveHooks } from './hooks'
+import type { Config, ResolvedConfig } from './config.ts'
+import type { Hooks } from './hooks.ts'
+import { resolveConfig } from './config.ts'
+import { resolveHooks } from './hooks.ts'
 
 export class CoreContext {
   config: ResolvedConfig

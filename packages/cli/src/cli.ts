@@ -1,12 +1,12 @@
 import { defineCommand, runMain } from 'citty'
-import { handle } from '.'
-import { description, version } from '../package.json'
+import pkg from '../package.json' with { type: 'json' }
+import { handle } from './index.ts'
 
 const main = defineCommand({
   meta: {
     name: 'pkg-placeholder',
-    version,
-    description,
+    version: pkg.version,
+    description: pkg.description,
   },
   args: {
     patterns: {

@@ -1,6 +1,6 @@
 import type { Hookable } from 'hookable'
-import type { ResolvedConfig } from './config'
-import type { CoreReturns, ResolvedCoreOptions } from './core'
+import type { ResolvedConfig } from './config.ts'
+import type { CoreReturns, ResolvedCoreOptions } from './core.ts'
 import { createHooks } from 'hookable'
 
 export function resolveHooks(_config: ResolvedConfig): Hookable<Hooks> {

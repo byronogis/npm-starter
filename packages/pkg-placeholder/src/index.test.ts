@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { defineConfig } from '.'
+import { defineConfig } from './index.ts'
 
 describe('pkg-placeholder', () => {
   it('should define config', () => {

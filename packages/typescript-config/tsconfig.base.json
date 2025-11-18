@@ -7,15 +7,16 @@
     /**
      * Language and Environment
      */
-    "target": "ESNext",
+    "target": "esnext",
     "moduleDetection": "force",
     "lib": ["ESNext"],
     // "lib": ["ESNext", "DOM", "DOM.Iterable"]
     /**
      * Modules
      */
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "types": [
       "@types/node"
@@ -30,6 +31,7 @@
     /**
      * Emit
      */
+    "noEmit": true,
     "removeComments": false,
     "declaration": true,
     "sourceMap": true,

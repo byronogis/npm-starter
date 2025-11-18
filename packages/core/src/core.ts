@@ -1,6 +1,6 @@
 import type { SetRequired } from 'type-fest'
-import { loadConfig } from './config'
-import { CoreContext } from './context'
+import { loadConfig } from './config.ts'
+import { CoreContext } from './context.ts'
 
 export async function resolveCoreOptions(options: CoreOptions): Promise<ResolvedCoreOptions> {
   if (!options.ctx) {

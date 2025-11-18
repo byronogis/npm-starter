@@ -1,4 +1,4 @@
-import type { CliConfig, ResolvedCliConfig } from './types'
+import type { CliConfig, ResolvedCliConfig } from './types.ts'
 import { readFileSync } from 'node:fs'
 import process from 'node:process'
 import { core, CoreContext, CoreError, loadConfig } from '@pkg-placeholder/core'
@@ -7,9 +7,9 @@ import { consola } from 'consola'
 import { resolve } from 'pathe'
 import { debounce } from 'perfect-debounce'
 import { glob } from 'tinyglobby'
-import { version } from '../package.json'
-import { handleError } from './errors'
-import { getWatcher } from './watcher'
+import pkg from '../package.json' with { type: 'json' }
+import { handleError } from './errors.ts'
+import { getWatcher } from './watcher.ts'
 
 const name = 'pkg-placeholder'
 
@@ -40,7 +40,7 @@ export async function handle(_config: CliConfig): Promise<void> {
     fileCache.set(file, readFileSync(file, 'utf8'))
   }))
 
-  consola.log(green(`${name} v${version}`))
+  consola.log(green(`${name} v${pkg.version}`))
 
   if (config.watch) {
     consola.start(`${name} in watch mode...`)
