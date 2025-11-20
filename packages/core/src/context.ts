@@ -9,17 +9,17 @@ export class CoreContext {
   config: ResolvedConfig
   hooks: Hookable<Hooks>
 
-  constructor(options: ContextOptions) {
-    const _configs = [options.configs].flat(2)
-    // @ts-expect-error resolved poperty is not defined in Config but in ResolvedConfig
-    this.config = _configs[0]?.resolved
-      ? _configs[0] as ResolvedConfig
-      : resolveConfig(..._configs)
+  constructor(options: ContextOptions = {}) {
+    const {
+      configs = [],
+    } = options
+
+    this.config = resolveConfig(...[configs].flat())
 
     this.hooks = resolveHooks(this.config)
   }
 }
 
-interface ContextOptions {
-  configs: ResolvedConfig | Arrayable<Config>
+export interface ContextOptions {
+  configs?: ResolvedConfig | Arrayable<Config>
 }

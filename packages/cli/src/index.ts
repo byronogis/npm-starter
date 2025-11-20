@@ -1,14 +1,13 @@
 import type { CliConfig, ResolvedCliConfig } from './types.ts'
 import { readFileSync } from 'node:fs'
-import process from 'node:process'
-import { core, CoreContext, CoreError, loadConfig } from '@pkg-placeholder/core'
+import { core, CoreContext, loadConfig } from '@pkg-placeholder/core'
 import { cyan, dim, green } from 'colorette'
 import { consola } from 'consola'
 import { resolve } from 'pathe'
 import { debounce } from 'perfect-debounce'
 import { glob } from 'tinyglobby'
 import pkg from '../package.json' with { type: 'json' }
-import { handleError } from './errors.ts'
+import { handleError, PrettyError } from './errors.ts'
 import { getWatcher } from './watcher.ts'
 
 const name = 'pkg-placeholder'
@@ -19,19 +18,12 @@ export async function handle(_config: CliConfig): Promise<void> {
   const config = await loadConfig<CliConfig>(_config) as ResolvedCliConfig
 
   if (!config.patterns?.length) {
-    handleError(new CoreError(`No glob patterns, try ${cyan(`${name} <path/to/**/*>`)}`))
-    process.exit(1)
+    throw new PrettyError(`No glob patterns, try ${cyan(`${name} <path/to/**/*>`)}`)
   }
 
   const ctx = new CoreContext({ configs: config })
 
-  ctx.hooks.hook('event:cli:task:end', (/* options, res */) => {
-    console.log('[pkg-placeholder] event:cli:task:end' /* options, res */)
-  })
-
-  const files = await glob([
-    ...config.patterns,
-  ], {
+  const files = await glob(config.patterns, {
     cwd: config.cwd,
     absolute: true,
     expandDirectories: false,
@@ -101,15 +93,6 @@ export async function handle(_config: CliConfig): Promise<void> {
 
     const coreOprions = { ctx, files: sourceCache.map(({ id }) => id) }
 
-    try {
-      const res = await core(coreOprions)
-      await ctx.hooks.callHook('event:cli:task:end', coreOprions, res)
-    }
-    catch (error: any) {
-      if (error instanceof CoreError) {
-        throw new CoreError(`[@${name}/cli] ${error.message}`)
-      }
-      throw error
-    }
+    await core(coreOprions)
   }
 }

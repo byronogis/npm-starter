@@ -2,7 +2,7 @@ import type { SetRequired } from 'type-fest'
 import { loadConfig } from './config.ts'
 import { CoreContext } from './context.ts'
 
-export async function resolveCoreOptions(options: CoreOptions): Promise<ResolvedCoreOptions> {
+export async function resolveCoreOptions(options: CoreOptions = {}): Promise<ResolvedCoreOptions> {
   if (!options.ctx) {
     const configs = await loadConfig()
     options.ctx = new CoreContext({ configs })
@@ -11,12 +11,18 @@ export async function resolveCoreOptions(options: CoreOptions): Promise<Resolved
   return options as ResolvedCoreOptions
 }
 
-export async function core(_options: CoreOptions): Promise<CoreReturns> {
-  const options = await resolveCoreOptions(_options)
+export async function core(options: CoreOptions = {}): Promise<CoreReturns> {
+  const resolvedOptions = await resolveCoreOptions(options)
 
-  await options.ctx.hooks.callHook('event:core:start', options)
+  await resolvedOptions.ctx.hooks.callHook('event:core:start', resolvedOptions)
 
-  return '[pkg-placeholder] core'
+  // ... TODO do core stuff here ...
+
+  const res: CoreReturns = '[pkg-placeholder] core'
+
+  await resolvedOptions.ctx.hooks.callHook('event:core:end', resolvedOptions, res)
+
+  return res
 }
 
 export interface CoreOptions {

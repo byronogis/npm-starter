@@ -1,5 +1,4 @@
 export * from './config.ts'
 export * from './context.ts'
 export * from './core.ts'
-export * from './errors.ts'
 export * from './hooks.ts'

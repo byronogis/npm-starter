@@ -1,5 +1,6 @@
 import { defineCommand, runMain } from 'citty'
 import pkg from '../package.json' with { type: 'json' }
+import { handleError } from './errors.ts'
 import { handle } from './index.ts'
 
 const main = defineCommand({
@@ -10,6 +11,7 @@ const main = defineCommand({
   },
   args: {
     patterns: {
+      // TODO variadic support https://github.com/unjs/citty/issues/115
       type: 'positional',
       description: 'Glob pattern',
       required: false,
@@ -29,7 +31,7 @@ const main = defineCommand({
     handle({
       ...args,
       patterns: Array.isArray(args.patterns) ? args.patterns : [args.patterns],
-    })
+    }).catch(handleError)
   },
 })
 
