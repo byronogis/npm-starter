@@ -1,3 +1,10 @@
+catalogMode: prefer
+ignoreWorkspaceRootCheck: true
+shellEmulator: true
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - chokidar@4.0.3
+
 packages:
   - playground
   - docs
@@ -8,8 +15,8 @@ catalog: null
 
 catalogs:
   build:
-    tsdown: ^0.16.8
-    vite: ^7.2.4
+    tsdown: ^0.18.3
+    vite: ^7.3.0
   cli:
     chokidar: 3.6.0
     citty: ^0.1.6
@@ -18,10 +25,10 @@ catalogs:
   deps:
     automd: ^0.4.2
     bumpp: ^10.3.2
-    c12: ^3.3.2
+    c12: ^3.3.3
     defu: ^6.1.4
-    fs-extra: ^11.3.2
-    hookable: ^5.5.3
+    fs-extra: ^11.3.3
+    hookable: ^6.0.1
     jiti: ^2.6.1
     pathe: ^2.0.3
     perfect-debounce: ^2.0.0
@@ -29,18 +36,18 @@ catalogs:
     tinyglobby: ^0.2.15
     typescript: ^5.9.3
   lint:
-    '@antfu/eslint-config': ^6.2.0
-    eslint: ^9.39.1
+    '@antfu/eslint-config': ^6.7.3
+    eslint: ^9.39.2
     lint-staged: ^16.2.7
     simple-git-hooks: ^2.13.1
   playground:
-    '@unocss/reset': ^66.5.9
-    unocss: ^66.5.9
+    '@unocss/reset': ^66.5.10
+    unocss: ^66.5.10
     vite-plugin-ejs: ^1.7.0
   test:
-    '@vitest/coverage-v8': ^4.0.14
-    vitest: ^4.0.14
+    '@vitest/coverage-v8': ^4.0.16
+    vitest: ^4.0.16
   types:
     '@types/fs-extra': ^11.0.4
-    '@types/node': ^24.10.1
-    type-fest: ^5.2.0
+    '@types/node': ^25.0.3
+    type-fest: ^5.3.1
