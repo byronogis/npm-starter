@@ -46,7 +46,10 @@ catalogs:
     vite-plugin-ejs: ^1.7.0
   test:
     '@vitest/coverage-v8': ^4.0.16
+    tinyexec: ^1.0.2
     vitest: ^4.0.16
+    vitest-package-exports: ^1.1.1
+    yaml: ^2.8.2
   types:
     '@types/fs-extra': ^11.0.4
     '@types/node': ^25.0.3

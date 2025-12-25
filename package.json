@@ -41,10 +41,13 @@
     "lint-staged": "catalog:lint",
     "rimraf": "catalog:deps",
     "simple-git-hooks": "catalog:lint",
+    "tinyexec": "catalog:test",
     "tinyglobby": "catalog:deps",
     "tsdown": "catalog:build",
     "typescript": "catalog:deps",
-    "vitest": "catalog:test"
+    "vitest": "catalog:test",
+    "vitest-package-exports": "catalog:test",
+    "yaml": "catalog:test"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
