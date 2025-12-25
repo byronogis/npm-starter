@@ -8,8 +8,5 @@ export default defineConfig({
     coverage: {
       enabled: true,
     },
-    includeSource: [
-      'scripts/**',
-    ],
   },
 })

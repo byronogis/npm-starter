@@ -7,7 +7,7 @@ export default defineConfig({
   execute(config) {
     const { newVersion, updatedFiles } = config.state
 
-    console.log(`Generating changelog for version ${newVersion}...`)
+    console.info(`Generating changelog for version ${newVersion}...`)
 
     const filename = 'CHANGELOG.md'
     execSync(`npx changelogen -r=${newVersion} --output=${filename}`, { encoding: 'utf-8' })
