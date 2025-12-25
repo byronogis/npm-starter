@@ -1,10 +1,9 @@
-import type { Hookable } from 'hookable'
 import type { ResolvedConfig } from './config.ts'
 import type { CoreReturns, ResolvedCoreOptions } from './core.ts'
-import { createHooks } from 'hookable'
+import { Hookable } from 'hookable'
 
 export function resolveHooks(config: ResolvedConfig): Hookable<Hooks> {
-  const hooks = createHooks<Hooks>()
+  const hooks = new Hookable<Hooks>()
 
   // Register user-defined hooks from config
   if (config.hooks) {
