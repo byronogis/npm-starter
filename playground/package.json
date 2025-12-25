@@ -3,15 +3,22 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "postinstall": "astro sync",
     "clear": "rimraf dist"
   },
-  "devDependencies": {
-    "@unocss/reset": "catalog:playground",
-    "pkg-placeholder": "workspace:*",
-    "unocss": "catalog:playground",
-    "vite": "catalog:build",
-    "vite-plugin-ejs": "catalog:playground"
+  "dependencies": {
+    "@astrojs/react": "catalog:playground",
+    "@astrojs/starlight": "catalog:playground",
+    "@astrojs/vue": "catalog:playground",
+    "@iconify-json/lucide": "catalog:playground",
+    "astro": "catalog:playground",
+    "sharp": "catalog:playground",
+    "unocss": "catalog:playground"
+
   }
 }

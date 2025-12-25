@@ -1,9 +1,10 @@
 {
-  "extends": "@pkg-placeholder/typescript-config/tsconfig.base.json",
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "lib": ["ESNext", "DOM"]
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
 }
