@@ -9,7 +9,6 @@
     "./*": "./src/*.ts"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit",
-    "release": "echo @pkg-placeholder/shared noneed release"
+    "typecheck": "tsc --noEmit"
   }
 }

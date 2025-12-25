@@ -40,7 +40,6 @@
     "build": "tsdown",
     "start": "jiti src/index.ts",
     "prepublishOnly": "pnpm run build",
-    "release": "pnpm publish",
     "typecheck": "tsc --noEmit",
     "clear": "rimraf dist"
   },

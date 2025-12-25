@@ -18,7 +18,7 @@
     "dev:full": "pnpm run -r --parallel dev",
     "build:full": "pnpm run -r build",
     "automd": "pnpm run -r automd && pnpm run root:automd",
-    "release": "bumpp -r && pnpm run -r release",
+    "release": "bumpp -r",
     "root:automd": "automd --input='README*.md' && node ./scripts/copy-readme.mjs",
     "root:lint": "eslint .",
     "root:lint:fix": "eslint . --fix",
