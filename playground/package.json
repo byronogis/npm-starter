@@ -8,10 +8,12 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "typecheck": "astro check",
     "postinstall": "astro sync",
     "clear": "rimraf dist"
   },
   "dependencies": {
+    "@astrojs/check": "catalog:playground",
     "@astrojs/react": "catalog:playground",
     "@astrojs/starlight": "catalog:playground",
     "@astrojs/vue": "catalog:playground",
@@ -19,6 +21,5 @@
     "astro": "catalog:playground",
     "sharp": "catalog:playground",
     "unocss": "catalog:playground"
-
   }
 }

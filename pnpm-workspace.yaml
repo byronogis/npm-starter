@@ -1,20 +1,21 @@
 catalogMode: prefer
+
 ignoreWorkspaceRootCheck: true
+
 shellEmulator: true
+
 trustPolicy: no-downgrade
+
 trustPolicyExclude:
   - chokidar@4.0.3
   - vite@6.4.1
   - semver@6.3.1
-
 packages:
   - playground
   - docs
   - packages/*
   - examples/*
-
 catalog: null
-
 catalogs:
   build:
     tsdown: ^0.18.3
@@ -42,6 +43,7 @@ catalogs:
     lint-staged: ^16.2.7
     simple-git-hooks: ^2.13.1
   playground:
+    '@astrojs/check': ^0.9.6
     '@astrojs/react': ^4.4.2
     '@astrojs/starlight': ^0.37.1
     '@astrojs/vue': ^5.1.3
