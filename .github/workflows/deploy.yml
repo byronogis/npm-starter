@@ -11,7 +11,7 @@ jobs:
     uses: byronogis/workflows/.github/workflows/deploy.yml@v1
     with:
       dist: playground/dist
-      build: nr build:full
+      build: nr build
     permissions:
       contents: read
       pages: write
