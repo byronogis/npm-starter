@@ -1,58 +1,66 @@
 {
-  "name": "@pkg-placeholder/monorepo",
+  "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
-  "private": true,
-  "packageManager": "pnpm@10.26.2",
+  "packageManager": "pnpm@10.33.0",
   "description": "_description_",
+  "author": "Byron <byronogis@outlook.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/byronogis",
+  "homepage": "https://github.com/byronogis/pkg-placeholder#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/byronogis/pkg-placeholder.git"
+    "url": "git+https://github.com/byronogis/pkg-placeholder.git"
   },
-  "engines": {
-    "node": ">=20.19"
+  "bugs": "https://github.com/byronogis/pkg-placeholder/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./dist/cli.mjs",
+    "./package.json": "./package.json"
   },
+  "bin": {
+    "tsnapi": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "pnpm run -r --parallel -F './packages/*' dev",
-    "build": "pnpm run -r -F './packages/*' build",
-    "dev:full": "pnpm run -r --parallel dev",
-    "build:full": "pnpm run -r build",
-    "automd": "pnpm run -r automd",
-    "release": "bumpp -r",
-    "root:lint": "eslint .",
-    "root:lint:fix": "eslint . --fix",
-    "typecheck": "pnpm run -r typecheck",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "start": "node src/cli.ts",
+    "lint": "eslint",
     "test": "vitest",
-    "clear": "pnpm run -r clear && rimraf -g '**/node_modules' '**/coverage'",
+    "typecheck": "tsc",
+    "release": "bumpp -r",
     "update": "npx taze -r -I latest",
+    "prepublishOnly": "nr build && automd",
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:lint",
-    "@pkg-placeholder/cli": "workspace:*",
-    "@pkg-placeholder/shared": "workspace:*",
-    "@pkg-placeholder/typescript-config": "workspace:*",
     "@types/node": "catalog:types",
     "@vitest/coverage-v8": "catalog:test",
     "automd": "catalog:deps",
     "bumpp": "catalog:deps",
+    "cac": "catalog:deps",
     "eslint": "catalog:lint",
-    "jiti": "catalog:deps",
     "lint-staged": "catalog:lint",
-    "rimraf": "catalog:deps",
+    "publint": "catalog:deps",
     "simple-git-hooks": "catalog:lint",
-    "tinyexec": "catalog:test",
-    "tinyglobby": "catalog:deps",
     "tsdown": "catalog:build",
-    "typescript": "catalog:deps",
-    "vitest": "catalog:test",
-    "vitest-package-exports": "catalog:test",
-    "yaml": "catalog:test"
+    "tsnapi": "catalog:test",
+    "typescript": "catalog:types",
+    "vitest": "catalog:test"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "inlinedDependencies": {
+    "cac": "7.0.0"
   }
 }
