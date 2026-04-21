@@ -44,7 +44,7 @@
     "@vitest/coverage-v8": "catalog:test",
     "automd": "catalog:deps",
     "bumpp": "catalog:deps",
-    "cac": "catalog:deps",
+    "cac": "catalog:inlined",
     "eslint": "catalog:lint",
     "lint-staged": "catalog:lint",
     "publint": "catalog:deps",

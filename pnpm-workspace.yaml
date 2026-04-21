@@ -14,8 +14,9 @@ catalogs:
   deps:
     automd: ^0.4.3
     bumpp: ^11.0.1
-    cac: ^7.0.0
     publint: ^0.3.18
+  inlined:
+    cac: ^7.0.0
   lint:
     '@antfu/eslint-config': ^8.2.0
     eslint: ^10.2.1
